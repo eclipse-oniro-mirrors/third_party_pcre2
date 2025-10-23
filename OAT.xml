@@ -1,21 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright (c) 2021 Huawei Device Co., Ltd.
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
-
-    This is the configuration file template for OpenHarmony OSS Audit Tool, please copy it to your project root dir and modify it refer to OpenHarmony/tools_oat/README.
-
--->
 
 <configuration>
     <oatconfig>
@@ -33,7 +16,11 @@
                 <policyitem type="compatibility" name="GPLStyleLicense" path="pcre2/missing" desc="协议为 Autoconf/Libtool exception to GPL 2.0 or later，满足该协议的约束，不受GPL协议影响。"/>
                 <policyitem type="license" name="GPLStyleLicense" path="pcre2/missing" desc="协议为 Autoconf/Libtool exception to GPL 2.0 or later，满足该协议的约束，不受GPL协议影响。"/>
                 <policyitem type="license" name="GPLStyleLicense" path="pcre2/test-driver" desc="协议为 Autoconf/Libtool exception to GPL 2.0 or later，满足该协议的约束，不受GPL协议影响。"/>
+                <policyitem type="license" name="BSD-style" path="pcre2/.*" desc="协议为 Autoconf/Libtool exception to GPL 2.0 or later，满足该协议的约束，不受GPL协议影响。"/>
+                <policyitem type="license" name="GPL-2.0-only" path="pcre2/.*" desc="协议为 Autoconf/Libtool exception to GPL 2.0 or later，满足该协议的约束，不受GPL协议影响。"/>
                 <policyitem type="compatibility" name="GPLStyleLicense" path="pcre2/test-driver" desc="协议为 Autoconf/Libtool exception to GPL 2.0 or later，满足该协议的约束，不受GPL协议影响。"/>
+                <policyitem type="compatibility" name="BSD-style" path="pcre2/.*" desc="协议为 Autoconf/Libtool exception to GPL 2.0 or later，满足该协议的约束，不受GPL协议影响。"/>
+                <policyitem type="compatibility" name="GPL-2.0-only" path="pcre2/.*" desc="协议为 Autoconf/Libtool exception to GPL 2.0 or later，满足该协议的约束，不受GPL协议影响。"/>
                 <policyitem type="compatibility" name="GPLStyleLicense" path="pcre2/ar-lib" desc="协议为 Autoconf/Libtool exception to GPL 2.0 or later，满足该协议的约束，不受GPL协议影响。"/>
                 <policyitem type="compatibility" name="GPLStyleLicense" path="pcre2/compile" desc="协议为 Autoconf/Libtool exception to GPL 2.0 or later，满足该协议的约束，不受GPL协议影响。"/>
                 <policyitem type="compatibility" name="GPLStyleLicense" path="pcre2/config.guess" desc="协议为 Autoconf/Libtool exception to GPL 2.0 or later，满足该协议的约束，不受GPL协议影响。"/>
@@ -104,17 +91,20 @@
                 <filteritem type="filepath" name="pcre2/doc/index.html.src" desc="no license header"/>
                 <filteritem type="filepath" name="pcre2/doc/pcre2-config.1" desc="no license header"/>
                 <filteritem type="filepath" name="pcre2/doc/pcre2grep.1" desc="no license header"/>
+                <filteritem type="filepath" name="pcre2/maint/GenerateUcpTables.py" desc="no license header"/>
+                <filteritem type="filepath" name="pcre2/maint/GenerateCommon.py" desc="no license header"/>
+                <filteritem type="filepath" name="pcre2/maint/GenerateTest26.py" desc="no license header"/>
+                <filteritem type="filepath" name="pcre2/maint/GenerateUcd.py" desc="no license header"/>
+                <filteritem type="filepath" name="pcre2/maint/GenerateUcpHeader.py" desc="no license header"/>
+                <filteritem type="filepath" name="copy_generic_files.sh" desc="no license header"/>
+                <filteritem type="filepath" name="BUILD.gn" desc="no license header"/>
+                <filteritem type="filepath" name="pcre2/check_md5.sh" desc="no license header"/>
             </filefilter>
             <filefilter name="copyrightPolicyFilter" desc="Filters for copyright header policies">
                 <filteritem type="filepath" name="pcre2/src/sljit/.*.c" desc="InvalidCopyright"/>
                 <filteritem type="filepath" name="pcre2/132html" desc="InvalidCopyright"/>
                 <filteritem type="filepath" name="pcre2/CleanTxt" desc="InvalidCopyright"/>
                 <filteritem type="filepath" name="pcre2/maint/GenerateUtt.py" desc="InvalidCopyright"/>
-                <filteritem type="filepath" name="pcre2/maint/GenerateUcpTables.py" desc="InvalidCopyright"/>
-                <filteritem type="filepath" name="pcre2/maint/GenerateCommon.py" desc="InvalidCopyright"/>
-                <filteritem type="filepath" name="pcre2/maint/GenerateTest26.py" desc="InvalidCopyright"/>
-                <filteritem type="filepath" name="pcre2/maint/GenerateUcd.py" desc="InvalidCopyright"/>
-                <filteritem type="filepath" name="pcre2/maint/GenerateUcpHeader.py" desc="InvalidCopyright"/>
                 <filteritem type="filepath" name="pcre2/maint/ManyConfigTests" desc="InvalidCopyright"/>
                 <filteritem type="filepath" name="pcre2/maint/MultiStage2.py" desc="InvalidCopyright"/>
                 <filteritem type="filepath" name="pcre2/maint/pcre2_chartables.c.non-standard" desc="InvalidCopyright"/>
@@ -131,6 +121,22 @@
                 <filteritem type="filepath" name="pcre2/WORKSPACE.bazel" desc="Copyright Header Invalid: NULL"/>
                 <filteritem type="filepath" name="pcre2/BUILD.bazel" desc="Copyright Header Invalid: NULL"/>
                 <filteritem type="filepath" name="pcre2/.bazelrc" desc="Copyright Header Invalid: NULL"/>
+                <filteritem type="filepath" name="BUILD.gn" desc="Copyright Header Invalid: NULL"/>
+                <filteritem type="filepath" name="pcre2/pcre2_fuzzer_32.dict" desc="Copyright Header Invalid: NULL"/>
+                <filteritem type="filepath" name="pcre2/maint/GenerateUcpTables.py" desc="Copyright Header Invalid: NULL"/>
+                <filteritem type="filepath" name="pcre2/pcre2_fuzzer_32.options" desc="Copyright Header Invalid: NULL"/>
+                <filteritem type="filepath" name="copy_generic_files.sh" desc="Copyright Header Invalid: NULL"/>
+                <filteritem type="filepath" name="pcre2/build.zig" desc="Copyright Header Invalid: NULL"/>
+                <filteritem type="filepath" name="pcre2/check_md5.sh" desc="Copyright Header Invalid: NULL"/>
+                <filteritem type="filepath" name="pcre2/vms/configure.com" desc="Copyright Header Invalid: NULL"/>
+                <filteritem type="filepath" name="pcre2/maint/GenerateCommon.py" desc="Copyright Header Invalid: NULL"/>
+                <filteritem type="filepath" name="pcre2/vms/pcre2.h_patch" desc="Copyright Header Invalid: NULL"/>
+                <filteritem type="filepath" name="pcre2/maint/GenerateTest26.py" desc="Copyright Header Invalid: NULL"/>
+                <filteritem type="filepath" name="pcre2/vms/stdint.h" desc="Copyright Header Invalid: NULL"/>
+                <filteritem type="filepath" name="pcre2/pcre2_fuzzer_16.dict" desc="Copyright Header Invalid: NULL"/>
+                <filteritem type="filepath" name="pcre2/maint/GenerateUcd.py" desc="Copyright Header Invalid: NULL"/>
+                <filteritem type="filepath" name="pcre2/pcre2_fuzzer_16.options" desc="Copyright Header Invalid: NULL"/>
+                <filteritem type="filepath" name="pcre2/maint/GenerateUcpHeader.py" desc="Copyright Header Invalid: NULL"/>
                 <filteritem type="filepath" name="pcre2/testdata/.*" desc="Describe the reason for filtering scan results"/>
                 <filteritem type="filepath" name="include/pcre2.h" desc="Describe the reason for filtering scan results"/>
                 <filteritem type="filepath" name="pcre2/PrepareRelease" desc="Describe the reason for filtering scan results"/>
