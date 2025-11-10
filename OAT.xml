@@ -18,6 +18,7 @@
                 <policyitem type="license" name="GPLStyleLicense" path="pcre2/test-driver" desc="协议为 Autoconf/Libtool exception to GPL 2.0 or later，满足该协议的约束，不受GPL协议影响。"/>
                 <policyitem type="license" name="BSD-style" path="pcre2/.*" desc="协议为 Autoconf/Libtool exception to GPL 2.0 or later，满足该协议的约束，不受GPL协议影响。"/>
                 <policyitem type="license" name="GPL-2.0-only" path="pcre2/.*" desc="协议为 Autoconf/Libtool exception to GPL 2.0 or later，满足该协议的约束，不受GPL协议影响。"/>
+                <policyitem type="license" name="BSD LICENSE" path="pcre2/.*" desc="协议为 Autoconf/Libtool exception to GPL 2.0 or later，满足该协议的约束，不受GPL协议影响。"/>
                 <policyitem type="compatibility" name="GPLStyleLicense" path="pcre2/test-driver" desc="协议为 Autoconf/Libtool exception to GPL 2.0 or later，满足该协议的约束，不受GPL协议影响。"/>
                 <policyitem type="compatibility" name="BSD-style" path="pcre2/.*" desc="协议为 Autoconf/Libtool exception to GPL 2.0 or later，满足该协议的约束，不受GPL协议影响。"/>
                 <policyitem type="compatibility" name="GPL-2.0-only" path="pcre2/.*" desc="协议为 Autoconf/Libtool exception to GPL 2.0 or later，满足该协议的约束，不受GPL协议影响。"/>
