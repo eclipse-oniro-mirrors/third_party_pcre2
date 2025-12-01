@@ -1,9 +1,9 @@
 [
     {
     "Name": "PCRE2",
-    "License": "BSD 3-Clause License WITH pcre2 exception",
-    "License File": "pcre2/LICENSE",
-    "Version Number": "pcre2-10.44",
+    "License": "BSD-3-Clause WITH PCRE2-exception",
+    "License File": "pcre2/LICENSE.md",
+    "Version Number": "pcre2-10.46",
     "Owner": "maliang34@huawei.com",
     "Upstream URL": "https://github.com/PhilipHazel/pcre2.git",
     "Description": "pcre2 is a re_working of the original PCRE1 library to provide an entirely new API."

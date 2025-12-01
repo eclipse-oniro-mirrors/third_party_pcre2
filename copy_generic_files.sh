@@ -12,7 +12,7 @@ function check_md5_and_copy() {
     fi
 }
 
-mkdir -P $pcre2_lib_dir/src
+mkdir -P $pcre2_gen_dir/src
 check_md5_and_copy $pcre2_lib_dir/src/config.h.generic $pcre2_gen_dir/src/config.h
 check_md5_and_copy $pcre2_lib_dir/src/pcre2.h.generic $pcre2_gen_dir/src/pcre2.h
 check_md5_and_copy $pcre2_lib_dir/src/pcre2_chartables.c.dist $pcre2_gen_dir/src/pcre2_chartables.c

@@ -112,6 +112,8 @@
                 <filteritem type="filepath" name="pcre2/maint/pcre2_chartables.c.non-standard" desc="InvalidCopyright"/>
                 <filteritem type="filepath" name="pcre2/autogen.sh" desc="InvalidCopyright"/>
                 <filteritem type="filepath" name="pcre2/maint/utf8.c" desc="InvalidCopyright"/>
+                <filteritem type="filepath" name="pcre2/maint/CleanTxt" desc="InvalidCopyright"/>
+                <filteritem type="filepath" name="pcre2/maint/132html" desc="InvalidCopyright"/>
                 <filteritem type="filepath" name="pcre2/pcre2_fuzzer.dict" desc="InvalidCopyright"/>
                 <filteritem type="filepath" name="pcre2/pcre2_fuzzer.options" desc="InvalidCopyright"/>
                 <filteritem type="filepath" name="pcre2/maint/ucptestdata/testinput1" desc="InvalidCopyright"/>
@@ -123,9 +125,27 @@
                 <filteritem type="filepath" name="pcre2/WORKSPACE.bazel" desc="Copyright Header Invalid: NULL"/>
                 <filteritem type="filepath" name="pcre2/BUILD.bazel" desc="Copyright Header Invalid: NULL"/>
                 <filteritem type="filepath" name="pcre2/.bazelrc" desc="Copyright Header Invalid: NULL"/>
+                <filteritem type="filepath" name="pcre2/.gitmodules" desc="Copyright Header Invalid: NULL"/>
                 <filteritem type="filepath" name="BUILD.gn" desc="Copyright Header Invalid: NULL"/>
                 <filteritem type="filepath" name="pcre2/pcre2_fuzzer_32.dict" desc="Copyright Header Invalid: NULL"/>
                 <filteritem type="filepath" name="pcre2/maint/GenerateUcpTables.py" desc="Copyright Header Invalid: NULL"/>
+                <filteritem type="filepath" name="pcre2/maint/UpdateDates.py" desc="Copyright Header Invalid: NULL"/>
+                <filteritem type="filepath" name="pcre2/maint/GenerateTest.py" desc="Copyright Header Invalid: NULL"/>
+                <filteritem type="filepath" name="pcre2/maint/CheckMan" desc="Copyright Header Invalid: NULL"/>
+                <filteritem type="filepath" name="pcre2/maint/RunManifestTest" desc="Copyright Header Invalid: NULL"/>
+                <filteritem type="filepath" name="pcre2/maint/RunPerlTest" desc="Copyright Header Invalid: NULL"/>
+                <filteritem type="filepath" name="pcre2/maint/CheckTxt" desc="Copyright Header Invalid: NULL"/>
+                <filteritem type="filepath" name="pcre2/maint/PrepareRelease" desc="Copyright Header Invalid: NULL"/>
+                <filteritem type="filepath" name="pcre2/maint/manifest-cmakeinstall-windows" desc="Copyright Header Invalid: NULL"/>
+                <filteritem type="filepath" name="pcre2/maint/manifest-cmakeinstall-linux" desc="Copyright Header Invalid: NULL"/>
+                <filteritem type="filepath" name="pcre2/maint/UpdateRelease.py" desc="Copyright Header Invalid: NULL"/>
+                <filteritem type="filepath" name="pcre2/maint/Detrail" desc="Copyright Header Invalid: NULL"/>
+                <filteritem type="filepath" name="pcre2/maint/manifest-cmakeinstall-macos" desc="Copyright Header Invalid: NULL"/>
+                <filteritem type="filepath" name="pcre2/maint/manifest-makeinstall-freebsd" desc="Copyright Header Invalid: NULL"/>
+                <filteritem type="filepath" name="pcre2/maint/UpdateCommon.py" desc="Copyright Header Invalid: NULL"/>
+                <filteritem type="filepath" name="pcre2/maint/manifest-makeinstall-linux" desc="Copyright Header Invalid: NULL"/>
+                <filteritem type="filepath" name="pcre2/maint/RunManifestTest.ps1" desc="Copyright Header Invalid: NULL"/>
+                <filteritem type="filepath" name="pcre2/maint/manifest-tarball" desc="Copyright Header Invalid: NULL"/>
                 <filteritem type="filepath" name="pcre2/pcre2_fuzzer_32.options" desc="Copyright Header Invalid: NULL"/>
                 <filteritem type="filepath" name="copy_generic_files.sh" desc="Copyright Header Invalid: NULL"/>
                 <filteritem type="filepath" name="pcre2/build.zig" desc="Copyright Header Invalid: NULL"/>
@@ -172,6 +192,9 @@
                 <filteritem type="filepath" name="pcre2/testdata/testoutput10" desc="already checked"/>
                 <filteritem type="filepath" name="pcre2/testdata/testbtables" desc="already checked"/>
                 <filteritem type="filepath" name="pcre2/testdata/testinput10" desc="already checked"/>
+                <filteritem type="filepath" name="pcre2/testdata/grepoutputUN" desc="already checked"/>
+                <filteritem type="filepath" name="pcre2/testdata/grepinputBad8" desc="already checked"/>
+                <filteritem type="filepath" name="pcre2/testdata/grepinputBad8_Trail" desc="already checked"/>
             </filefilter>
         </filefilterlist>
 

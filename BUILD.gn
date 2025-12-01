@@ -13,7 +13,7 @@ action("copy_generic_files") {
   inputs = [
     "$PCRE2_LIB_DIR/src/config.h.generic",
     "$PCRE2_LIB_DIR/src/pcre2.h.generic",
-    "$PCRE2_LIB_DIR/src/pcre2_chartables.c",
+    "$PCRE2_LIB_DIR/src/pcre2_chartables.c.dist",
   ]
   outputs = [
     "${target_gen_dir}/src/pcre2_chartables.c",
@@ -51,6 +51,7 @@ pcre2_sources = [
   "$PCRE2_LIB_DIR/src/pcre2_auto_possess.c",
   "$PCRE2_LIB_DIR/src/pcre2_chkdint.c",
   "$PCRE2_LIB_DIR/src/pcre2_compile.c",
+  "$PCRE2_LIB_DIR/src/pcre2_compile_class.c",
   "$PCRE2_LIB_DIR/src/pcre2_config.c",
   "$PCRE2_LIB_DIR/src/pcre2_context.c",
   "$PCRE2_LIB_DIR/src/pcre2_convert.c",
@@ -97,7 +98,7 @@ ohos_shared_library("libpcre2") {
     "ramdisk",
     "updater",
   ]
-  license_file = "$PCRE2_LIB_DIR/LICENCE"
+  license_file = "$PCRE2_LIB_DIR/LICENCE.md"
   innerapi_tags = [
     "platformsdk_indirect",
     "chipsetsdk_sp_indirect",
@@ -119,7 +120,7 @@ ohos_static_library("libpcre2_static") {
     "-DPCRE2_CODE_UNIT_WIDTH=8",
     "-w",
   ]
-  license_file = "$PCRE2_LIB_DIR/LICENCE"
+  license_file = "$PCRE2_LIB_DIR/LICENCE.md"
   part_name = "pcre2"
   subsystem_name = "thirdparty"
 }
@@ -139,7 +140,7 @@ ohos_static_library("libpcre2_static_16") {
     "-DPCRE2_CODE_UNIT_WIDTH=16",
     "-w",
   ]
-  license_file = "$PCRE2_LIB_DIR/LICENCE"
+  license_file = "$PCRE2_LIB_DIR/LICENCE.md"
   part_name = "pcre2"
   subsystem_name = "thirdparty"
 }
