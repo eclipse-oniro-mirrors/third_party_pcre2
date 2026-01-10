@@ -108,7 +108,11 @@ ohos_shared_library("libpcre2") {
 }
 
 ohos_static_library("libpcre2_static") {
+  defines = [ "ARK_PCRE2_NEWLINE_PATCH" ]
   deps = [ ":publish_generic_file" ]
+  if(path_exists("//arkcompiler/runtime_core")) {
+    external_deps = [ "runtime_core:arkruntime_pcre2" ]
+  }
   output_name = "libpcre2_static"
   sources = pcre2_sources
   sources += get_target_outputs(":publish_generic_file")
@@ -117,6 +121,7 @@ ohos_static_library("libpcre2_static") {
     "-D_GNU_SOURCE",
     "-DHAVE_CONFIG_H",
     "-DSUPPORT_PCRE2_8=1",
+    "-DSUPPORT_UNICODE=1",
     "-DPCRE2_CODE_UNIT_WIDTH=8",
     "-w",
   ]
@@ -126,7 +131,11 @@ ohos_static_library("libpcre2_static") {
 }
 
 ohos_static_library("libpcre2_static_16") {
+  defines = [ "ARK_PCRE2_NEWLINE_PATCH" ]
   deps = [ ":publish_generic_file" ]
+  if(path_exists("//arkcompiler/runtime_core")) {
+    external_deps = [ "runtime_core:arkruntime_pcre2" ]
+  }
   output_name = "libpcre2_static_16"
   sources = pcre2_sources
   sources -= [ "$PCRE2_LIB_DIR/src/pcre2_chkdint.c" ]
