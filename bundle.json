@@ -19,9 +19,7 @@
         "rom": "512KB",
         "ram": "512KB",
         "deps": {
-            "components": [
-                "runtime_core"
-            ],
+            "components": [],
             "third_party": []
         },
         "build": {
