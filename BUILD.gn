@@ -6,6 +6,7 @@ if (ark_standalone_build) {
 }
 
 PCRE2_LIB_DIR = "//third_party/pcre2/pcre2"
+PCRE2_ARKTS_DIR = "//third_party/pcre2/pcre2_ArkTS"
 
 # use action replace exec_script
 action("copy_generic_files") {
@@ -108,13 +109,11 @@ ohos_shared_library("libpcre2") {
 }
 
 ohos_static_library("libpcre2_static") {
-  defines = [ "ARK_PCRE2_NEWLINE_PATCH" ]
   deps = [ ":publish_generic_file" ]
-  if(path_exists("//arkcompiler/runtime_core")) {
-    external_deps = [ "runtime_core:arkruntime_pcre2" ]
-  }
   output_name = "libpcre2_static"
   sources = pcre2_sources
+  sources -= [ "$PCRE2_LIB_DIR/src/pcre2_newline.c" ]
+  sources += [ "$PCRE2_ARKTS_DIR/pcre2_newline_static.c" ]
   sources += get_target_outputs(":publish_generic_file")
   public_configs = [ ":third_party_pcre2_config" ]
   cflags = [
@@ -131,13 +130,11 @@ ohos_static_library("libpcre2_static") {
 }
 
 ohos_static_library("libpcre2_static_16") {
-  defines = [ "ARK_PCRE2_NEWLINE_PATCH" ]
   deps = [ ":publish_generic_file" ]
-  if(path_exists("//arkcompiler/runtime_core")) {
-    external_deps = [ "runtime_core:arkruntime_pcre2" ]
-  }
   output_name = "libpcre2_static_16"
   sources = pcre2_sources
+  sources -= [ "$PCRE2_LIB_DIR/src/pcre2_newline.c" ]
+  sources += [ "$PCRE2_ARKTS_DIR/pcre2_newline_static.c" ]
   sources -= [ "$PCRE2_LIB_DIR/src/pcre2_chkdint.c" ]
   sources += get_target_outputs(":publish_generic_file")
   public_configs = [ ":third_party_pcre2_config" ]
