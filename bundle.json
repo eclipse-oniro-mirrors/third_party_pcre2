@@ -40,6 +40,13 @@
                     }
                 },
                 {
+                    "name": "//third_party/pcre2:libpcre2_static_8",
+                    "header": {
+                      "header_files": [],
+                      "header_base": "//third_party/pcre2/pcre2/src"
+                    }
+                },
+                {
                     "name": "//third_party/pcre2:libpcre2_static_16",
                     "header": {
                         "header_files": [],
