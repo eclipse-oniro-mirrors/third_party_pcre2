@@ -2,7 +2,7 @@
     {
     "Name": "PCRE2",
     "License": "BSD-3-Clause WITH PCRE2-exception",
-    "License File": "pcre2/LICENSE.md",
+    "License File": "pcre2/LICENCE.md",
     "Version Number": "pcre2-10.46",
     "Owner": "maliang34@huawei.com",
     "Upstream URL": "https://github.com/PhilipHazel/pcre2.git",
