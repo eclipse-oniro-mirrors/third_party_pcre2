@@ -109,6 +109,7 @@ ohos_shared_library("libpcre2") {
 }
 
 ohos_static_library("libpcre2_static") {
+  branch_protector_ret = "pac_ret"
   deps = [ ":publish_generic_file" ]
   output_name = "libpcre2_static"
   sources = pcre2_sources
@@ -127,6 +128,7 @@ ohos_static_library("libpcre2_static") {
 }
 
 ohos_static_library("libpcre2_static_8") {
+  branch_protector_ret = "pac_ret"
   deps = [ ":publish_generic_file" ]
   output_name = "libpcre2_static_8"
   sources = pcre2_sources
@@ -148,6 +150,7 @@ ohos_static_library("libpcre2_static_8") {
 }
 
 ohos_static_library("libpcre2_static_16") {
+  branch_protector_ret = "pac_ret"
   deps = [ ":publish_generic_file" ]
   output_name = "libpcre2_static_16"
   sources = pcre2_sources
