@@ -83,6 +83,7 @@ ohos_shared_library("libpcre2") {
   deps = [ ":publish_generic_file" ]
   branch_protector_ret = "pac_ret"
   output_name = "libpcre2"
+  version_script = "libpcre2.map"
   sources = pcre2_sources
   sources += get_target_outputs(":publish_generic_file")
   public_configs = [ ":third_party_pcre2_config" ]
